@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.square {
+  margin: 0;
+
+  height: 4rem;
+  width: 4rem;
+
+  padding: 0;
+
+  display: block;
+  background: transparent;
+
+  outline: none;
+  overflow: hidden;
+
+  font-size: 4rem;
+  line-height: 4rem;
+
+  border: 1px solid #e6e6e6;
+
+  box-sizing: border-box;
+
+  &.firstPlayer {
+    color: red;
+  }
+
+  &.secondPlayer {
+    color: green;
+  }
+  @media (max-width: 44rem) {
+    height: 9vw;
+    width: 9vw;
+    font-size: 9vw;
+    line-height: 9vw;
+  }
+}
